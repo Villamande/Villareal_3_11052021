@@ -1,0 +1,44 @@
+$primary: #9656DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+$quaternary: #ECECEC;
+
+body {
+    font-family: roboto, sans-serif;
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    font-family: shrikhand;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+
+    p {
+        margin: 2vw 0;
+    }
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    background: $quaternary;
+}
+
+.location-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+.hat-intro {
+    margin: 0 22vw;
+
+    p {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
+

@@ -24,6 +24,11 @@ header {
     display: flex;
     justify-content: center;
     background: $quaternary;
+    box-shadow: inset 0 0.4vw 1vw darken($quaternary, 15%);
+
+    p {
+        margin: 4vw 0;
+    }
 }
 
 .location-logo {
@@ -32,13 +37,50 @@ header {
     margin-right: 2vw;
 }
 
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: lighten($quaternary, 4.5%);
+}
+
 .hat-intro {
-    margin: 0 22vw;
+    margin: 11vw 22vw 5vw 22vw;
 
     p {
+        margin: 0;
         font-size: 1.5em;
         font-weight: bold;
     }
 }
 
+.text-intro {
+    margin: 0 14vw 10vw 14vw;
+
+    p {
+        margin: 0;
+        font-size: 1.1em;
+        font-weight: 300;
+    }
+}
+
+form {
+    margin-bottom: 14vw;
+
+    span {
+        font-size: 1.3em;
+        font-weight: 500;
+    }
+  }
+
+button {
+    background: linear-gradient(0deg, $primary, $secondary);
+    border-radius: 9vw;
+    border: white;
+    padding: 4vw 5.5vw;
+
+    span {
+        color: white;
+    }
+}
 

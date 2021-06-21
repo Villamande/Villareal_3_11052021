@@ -5,29 +5,40 @@ body {
 }
 
 header {
-  font-family: shrikhand;
-  font-size: 2em;
   display: flex;
   justify-content: center;
 }
-header p {
+
+.website-logo {
+  box-shadow: 0vw 0.5vw 1vw #c6c6c6;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.website-logo p {
   margin: 2vw 0;
+  font-family: shrikhand;
+  font-size: 1.7em;
 }
 
 .location {
   display: flex;
   justify-content: center;
   background: #ECECEC;
-  box-shadow: inset 0 0.4vw 1vw #c6c6c6;
 }
 .location p {
   margin: 4vw 0;
+  font-size: 0.85em;
 }
 
 .location-logo {
   display: flex;
   align-items: center;
   margin-right: 2vw;
+}
+
+.fa-map-marker-alt {
+  font-size: 0.8em;
 }
 
 .intro {
@@ -38,20 +49,22 @@ header p {
 }
 
 .hat-intro {
-  margin: 11vw 22vw 5vw 22vw;
+  margin: 11vw 19vw 5vw 19vw;
+  text-align: center;
 }
 .hat-intro p {
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
 .text-intro {
-  margin: 0 14vw 10vw 14vw;
+  margin: 0 9vw 10vw 9vw;
+  text-align: center;
 }
 .text-intro p {
   margin: 0;
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-weight: 300;
 }
 
@@ -59,8 +72,9 @@ form {
   margin-bottom: 15vw;
 }
 form span {
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: 500;
+  color: white;
 }
 
 button {
@@ -69,13 +83,10 @@ button {
   border: white;
   padding: 4vw 5.5vw;
 }
-button span {
-  color: white;
-}
 
 .function h1 {
-  font-size: 1.5em;
-  margin: 12vw 0 8vw 4vw;
+  font-size: 1.2em;
+  margin: 12vw 0 8vw 5vw;
 }
 
 .topics-function {
@@ -104,29 +115,32 @@ button span {
 }
 
 .text-function p {
+  font-size: 0.8em;
   font-weight: 500;
 }
 
 .fa-mobile-alt {
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .fa-list {
-  font-size: 1.2em;
+  font-size: 0.9em;
 }
 
 .fa-store {
-  font-size: 1.2em;
+  font-size: 0.8em;
 }
 
 .number {
   background: #9656DC;
   border-radius: 3vw;
   padding: 1vw 2vw;
+  margin-left: -3.5vw;
 }
 .number p {
   margin: 0;
   color: white;
+  font-size: 0.7em;
 }
 
 .restaurants-presentation {
@@ -134,7 +148,7 @@ button span {
   background: #f6f6f6;
 }
 .restaurants-presentation h1 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 12vw 0 5vw 5vw;
 }
 
@@ -161,6 +175,40 @@ button span {
   border-radius: 4vw 4vw 0 0;
 }
 
+.new {
+  position: relative;
+}
+
+.tag-new-1 {
+  background: #99E2D0;
+  padding: 1.5vw 3vw 1.5vw 3vw;
+  border-radius: 1vw;
+  position: absolute;
+  right: 3vw;
+  top: 4vw;
+}
+.tag-new-1 p {
+  margin: 0;
+  font-size: 0.7em;
+  font-weight: 500;
+  color: #278870;
+}
+
+.tag-new-2 {
+  background: #99E2D0;
+  padding: 1.5vw 3vw 1.5vw 3vw;
+  border-radius: 1vw;
+  position: absolute;
+  right: 3vw;
+  top: 4vw;
+}
+.tag-new-2 p {
+  margin: 0;
+  font-size: 0.7em;
+  font-weight: 500;
+  color: #278870;
+}
+
 .restaurant-informations {
   display: flex;
   justify-content: space-between;
@@ -171,7 +219,7 @@ button span {
 }
 .restaurant-name h2 {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 0.9em;
 }
 
 .restaurant-location {
@@ -179,7 +227,7 @@ button span {
 }
 .restaurant-location p {
   margin: 0;
-  font-size: 1.1em;
+  font-size: 0.85em;
   font-weight: 300;
 }
 
@@ -188,37 +236,7 @@ button span {
 }
 
 .fa-heart {
-  font-size: 1.6em;
-}
-
-.tag-new-1 {
-  background: #99E2D0;
-  margin: 3.5vw 0 0 68vw;
-  display: flex;
-  justify-content: flex-end;
-  padding: 1vw 2vw 1vw 2vw;
-  position: absolute;
-}
-.tag-new-1 p {
-  margin: 0;
-  font-size: 0.9em;
-  font-weight: 500;
-  color: #278870;
-}
-
-.tag-new-2 {
-  background: #99E2D0;
-  margin: 75vw 0 0 68vw;
-  display: flex;
-  justify-content: flex-end;
-  padding: 1vw 2vw 1vw 2vw;
-  position: absolute;
-}
-.tag-new-2 p {
-  margin: 0;
-  font-size: 0.9em;
-  font-weight: 500;
-  color: #278870;
+  font-size: 1.2em;
 }
 
 footer {
@@ -226,11 +244,11 @@ footer {
 }
 
 .footer-title {
-  padding: 5vw 0 5.5vw 5vw;
+  padding: 5vw 0 6vw 5vw;
 }
 .footer-title p {
   font-family: shrikhand;
-  font-size: 1.25em;
+  font-size: 1em;
   margin: 0;
   color: white;
 }
@@ -240,12 +258,13 @@ footer {
 }
 .topics-footer p {
   color: white;
-  font-size: 1.1em;
+  font-size: 0.85em;
   margin: 0 0 2vw 0;
 }
 .topics-footer i {
   color: white;
   margin: 0;
+  font-size: 0.7em;
 }
 .topics-footer a {
   text-decoration: none;

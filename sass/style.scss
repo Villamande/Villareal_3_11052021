@@ -3,13 +3,15 @@ $secondary: #FF79DA;
 $tertiary: #99E2D0;
 $quaternary: #ECECEC;
 
+/*Homepage*/
+
 body {
     font-family: roboto, sans-serif;
     width: 100%;
     margin: 0;
 }
 
-/*Homepage*/
+/*header*/
 
 header {
     display: flex;
@@ -108,21 +110,11 @@ header {
     }
 }
 
-form {
+.restaurant-link {
     margin-bottom: 15vw;
 
     @media only screen and (min-width: 425px) and (max-width: 768px) {
         margin-bottom: 11vw;
-    }
-
-    span {
-        font-size: 1em;
-        font-weight: 500;
-        color: white;
-
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
-            font-size: 1.7em;
-        }
     }
   }
 
@@ -134,6 +126,16 @@ button {
 
     @media only screen and (min-width: 425px) and (max-width: 768px) {
         padding: 3vw 6vw;
+    }
+}
+
+.menu-button {
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+
+    @media only screen and (min-width: 425px) and (max-width: 768px) {
+        font-size: 1.7em;
     }
 }
 
@@ -404,6 +406,8 @@ button {
     }
 }
 
+/*Footer homepage and restaurants*/
+
 footer {
     background: #2E2E2E;
 }
@@ -484,6 +488,8 @@ footer {
 
 /*Restaurant pages*/
 
+/*header restaurant*/
+
 .website-presentation {
     display: flex;
     justify-content: center;
@@ -505,10 +511,23 @@ footer {
 .logo-arrow {
     position: absolute;
     left: 5vw;
+    top: 5vw;
 }
+
+.fa-arrow-left {
+    @media only screen and (min-width: 425px) and (max-width: 768px) {
+        font-size: 2em;
+    }
+}
+
+/*body restaurant*/
 
 .photo-page-restaurant {
     height: 67vw;
+
+    @media only screen and (min-width: 425px) and (max-width: 768px) {
+        height: 47vw;
+    }
 
     img {
         object-fit: cover;
@@ -527,16 +546,28 @@ footer {
         margin: 0;
         font-size: 1em;
         font-weight: 300;
+
+        @media only screen and (min-width: 425px) and (max-width: 768px) {
+            font-size: 1.6em;
+        }
     }
 
     h3 {
         margin: 0;
         font-size: 0.9em;
+
+        @media only screen and (min-width: 425px) and (max-width: 768px) {
+            font-size: 1.3em;
+        }    
     }
 
     p {
         margin: 0;
         font-size: 0.85em;
+
+        @media only screen and (min-width: 425px) and (max-width: 768px) {
+            font-size: 1.5em;
+        }    
     }
 }
 
@@ -546,22 +577,52 @@ footer {
     align-items: center;
     padding: 8vw 9vw 0 5vw;
 
+    @media only screen and (min-width: 425px) and (max-width: 768px) {
+        padding: 3vw 9vw 0 10vw;
+    }
+
     h1{
         font-family: shrikhand;
         font-size: 1.5em;
         font-weight: 400;
         margin: 0;
+
+        @media only screen and (min-width: 425px) and (max-width: 768px) {
+            font-size: 2.3em;
+        }
     }
+}
+
+.heart-logo {
+    padding: 4vw 6vw 4vw 0;
 }
 
 .fa-heart {
     font-size: 1.2em;
+
+    @media only screen and (min-width: 425px) and (max-width: 768px) {
+        font-size: 2em;
+    }
 }
 
 .course-title {
-    margin: 10vw 73vw 4vw 5vw;
+    margin: 10vw 0 4vw 5vw;
     padding-bottom: 2vw;
-    border-bottom: solid 1vw $tertiary;
+
+    @media only screen and (min-width: 425px) and (max-width: 768px) {
+        margin: 4vw 0 4vw 5vw;
+    }
+
+    h2 {
+        border-bottom: solid 1vw $tertiary;
+        width: 31px;
+
+        @media only screen and (min-width: 425px) and (max-width: 768px) {
+            font-size: 1.6em;
+            border-bottom: solid 0.6vw #99E2D0;
+            width: 45px;
+        }
+    }
 }
 
 .course-card {
@@ -572,82 +633,39 @@ footer {
     margin: 4vw 4vw 0 5vw;
     padding: 3vw 4vw 3vw 3vw;
     box-shadow: 1vw 1vw 3vw darken($quaternary, 2%);
-}
-
-footer {
-    background: #2E2E2E;
-}
-
-.footer-title {
-    padding: 5vw 0 6vw 5vw;
 
     @media only screen and (min-width: 425px) and (max-width: 768px) {
-        padding: 3vw 0 2vw 5vw;
-    }
-
-    p {
-        font-family: shrikhand;
-        font-size: 1em;
-        margin: 0;
-        color: white;
-
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
-            font-size: 1.3em;
-        }
+        padding: 3.5vw 5vw 3.5vw 4vw;
+        margin: 0 10vw 7vw 10vw;
     }
 }
 
-.topics-footer {
-    padding: 0 0 9vw 5vw;
-
-    p {
-        color: white;
-        font-size: 0.85em;
-        margin: 1vw;
-
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
-            font-size: 1.1em;
-            margin: 0.5vw 0;
-        }
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
-}
-
-.topic-footer-1 {
+.course-price {
     display: flex;
     align-items: center;
-}
 
-.footer-logo {
-    margin-right: 3vw;
-
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
-        margin-right: 1vw;
+    p {
+        font-weight: 500;
     }
 }
 
-.fa-utensils {
-    font-size: 0.7em;
-    color: white;
-    margin: 0;
+.order-link {
+    display: flex;
+    justify-content: center;
+    padding: 13vw 0 21vw 0;
 
     @media only screen and (min-width: 425px) and (max-width: 768px) {
-        margin-right: 1vw;
-        font-size: 1em;
+        padding: 3vw 0 12vw 0;
     }
 }
 
-.fa-hands-helping {
-    font-size: 0.7em;
+.text-button {
+    font-size: 1em;
+    font-weight: 500;
     color: white;
-    margin: 0;
+    padding: 0 7vw;
 
     @media only screen and (min-width: 425px) and (max-width: 768px) {
-        margin-right: 0.6vw;
-        font-size: 0.9em;
+        font-size: 1.7em;
     }
 }

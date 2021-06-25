@@ -434,6 +434,10 @@ footer {
 .topics-footer {
     padding: 0 0 9vw 5vw;
 
+    @media only screen and (min-width: 425px) and (max-width: 768px) {
+        padding: 0 0 4vw 5vw;
+    }
+
     p {
         color: white;
         font-size: 0.85em;

@@ -11,6 +11,12 @@ header {
   justify-content: center;
 }
 
+@media only screen and (min-width: 1024px) {
+  .website-introduction {
+    background: white;
+  }
+}
+
 .website-logo {
   box-shadow: 0vw 0.5vw 1vw #c6c6c6;
   display: flex;
@@ -22,9 +28,15 @@ header {
   font-family: shrikhand;
   font-size: 1.7em;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .website-logo p {
     font-size: 3.5em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .website-logo p {
+    font-size: 2.5em;
+    box-shadow: 0vw 0.5vw 1vw white;
   }
 }
 
@@ -37,10 +49,16 @@ header {
   margin: 4vw 0;
   font-size: 0.85em;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .location p {
     font-size: 1.4em;
     font-weight: 400;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .location p {
+    font-size: 1.2em;
+    margin: 2.5vw 0;
   }
 }
 
@@ -53,9 +71,14 @@ header {
 .fa-map-marker-alt {
   font-size: 0.8em;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .fa-map-marker-alt {
     font-size: 1.3em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .fa-map-marker-alt {
+    font-size: 1.1em;
   }
 }
 
@@ -63,16 +86,29 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #f6f6f6;
+  background: #f4f4f4;
+}
+@media only screen and (min-width: 1024px) {
+  .intro {
+    background: white;
+    align-items: normal;
+    padding-left: 3vw;
+  }
 }
 
 .hat-intro {
   margin: 11vw 19vw 5vw 19vw;
   text-align: center;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .hat-intro {
     margin: 7vw 0 5vw 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hat-intro {
+    margin: 4vw 0vw 2vw 0vw;
+    text-align: start;
   }
 }
 .hat-intro p {
@@ -80,9 +116,14 @@ header {
   font-size: 1.2em;
   font-weight: bold;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .hat-intro p {
     font-size: 1.8em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .hat-intro p {
+    font-size: 1.4em;
   }
 }
 
@@ -90,9 +131,15 @@ header {
   margin: 0 9vw 10vw 9vw;
   text-align: center;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .text-intro {
     margin: 0 18vw 8vw 18vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .text-intro {
+    margin: 0 0vw 5vw 0vw;
+    text-align: start;
   }
 }
 .text-intro p {
@@ -100,18 +147,28 @@ header {
   font-size: 0.9em;
   font-weight: 300;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .text-intro p {
     font-size: 1.4em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .text-intro p {
+    font-size: 1.2em;
   }
 }
 
 .restaurant-link {
   margin-bottom: 15vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurant-link {
     margin-bottom: 11vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .restaurant-link {
+    margin-bottom: 7vw;
   }
 }
 
@@ -121,9 +178,14 @@ button {
   border: white;
   padding: 4vw 5.5vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   button {
     padding: 3vw 6vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  button {
+    padding: 2vw 3vw;
   }
 }
 
@@ -132,9 +194,14 @@ button {
   font-weight: 500;
   color: white;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .menu-button {
     font-size: 1.7em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .menu-button {
+    font-size: 1.4em;
   }
 }
 
@@ -142,19 +209,32 @@ button {
   font-size: 1.2em;
   margin: 12vw 0 8vw 5vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .function h1 {
     font-size: 1.6em;
     margin: 6vw 0 6vw 5vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .function h1 {
+    font-size: 1.4em;
+    margin: 6vw 0 5vw 3vw;
   }
 }
 
 .topics-function {
   margin-bottom: 17vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .topics-function {
     margin-bottom: 9vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .topics-function {
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -166,7 +246,7 @@ button {
   border-radius: 6vw;
   box-shadow: 1vw 1vw 3vw #dfdfdf;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .topic-function {
     margin: 0 14vw 7vw 14vw;
     border-radius: 4vw;
@@ -177,9 +257,14 @@ button {
   color: #6d6d6d;
   padding: 7.5vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .function-logo {
     padding: 5vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .function-logo {
+    padding: 3vw;
   }
 }
 
@@ -189,46 +274,77 @@ button {
   color: #9656DC;
   padding: 7.5vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .store-logo {
     padding: 5vw;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .store-logo {
+    padding: 3vw;
+  }
+}
 
+@media only screen and (min-width: 1024px) {
+  .text-function {
+    margin-right: 3vw;
+  }
+}
 .text-function p {
   font-size: 0.8em;
   font-weight: 500;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .text-function p {
     font-size: 1.3em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .text-function p {
+    font-size: 1.1em;
+    margin: 0;
   }
 }
 
 .fa-mobile-alt {
   font-size: 1em;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .fa-mobile-alt {
     font-size: 1.3em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .fa-mobile-alt {
+    font-size: 1.2em;
   }
 }
 
 .fa-list {
   font-size: 0.9em;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .fa-list {
     font-size: 1.15em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .fa-list {
+    font-size: 1.2em;
   }
 }
 
 .fa-store {
   font-size: 0.8em;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .fa-store {
     font-size: 1.1em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .fa-store {
+    font-size: 1.2em;
   }
 }
 
@@ -238,10 +354,16 @@ button {
   padding: 1vw 2vw;
   margin-left: -3.5vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .number {
     padding: 0.6vw 1.3vw;
     margin-left: -2vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .number {
+    padding: 0.7vw 1vw;
+    margin-left: -1vw;
   }
 }
 .number p {
@@ -249,7 +371,7 @@ button {
   color: white;
   font-size: 0.7em;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .number p {
     font-size: 1em;
   }
@@ -259,19 +381,30 @@ button {
   padding: 4vw 0 12vw 0;
   background: #f6f6f6;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurants-presentation {
     padding: 4vw 0 2vw 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .restaurants-presentation {
+    padding: 1vw 0 12vw 0;
   }
 }
 .restaurants-presentation h1 {
   font-size: 1.2em;
   margin: 12vw 0 5vw 5vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurants-presentation h1 {
     font-size: 1.6em;
     margin: 5vw 0 7vw 5vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .restaurants-presentation h1 {
+    font-size: 1.4em;
+    margin: 0vw 0 5vw 3vw;
   }
 }
 
@@ -280,7 +413,7 @@ button {
   flex-direction: column;
   margin: 0 5.6vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .bloc-cards-restaurants {
     margin: 0 10vw;
   }
@@ -292,7 +425,7 @@ button {
   margin-bottom: 5vw;
   box-shadow: 1vw 1vw 3vw #e7e7e7;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .card-restaurant {
     margin-bottom: 8vw;
   }
@@ -301,9 +434,14 @@ button {
 .photo-restaurant {
   height: 46vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .photo-restaurant {
     height: 33vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .photo-restaurant {
+    height: 22vw;
   }
 }
 .photo-restaurant img {
@@ -331,7 +469,7 @@ button {
   font-weight: 500;
   color: #278870;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .tag-new-1 p {
     font-size: 1.1em;
   }
@@ -351,7 +489,7 @@ button {
   font-weight: 500;
   color: #278870;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .tag-new-2 p {
     font-size: 1.1em;
   }
@@ -365,7 +503,7 @@ button {
 .restaurant-name {
   margin: 4vw 0 0 3.5vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurant-name {
     margin: 2vw 0 0 3.5vw;
   }
@@ -374,7 +512,7 @@ button {
   margin: 0;
   font-size: 0.9em;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurant-name h2 {
     font-size: 1.3em;
   }
@@ -383,7 +521,7 @@ button {
 .restaurant-location {
   margin: 1vw 0 4.5vw 3.5vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurant-location {
     margin: 1vw 0 3vw 3.5vw;
   }
@@ -393,7 +531,7 @@ button {
   font-size: 0.85em;
   font-weight: 300;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurant-location p {
     font-size: 1.2em;
   }
@@ -402,7 +540,7 @@ button {
 .heart-logo {
   padding: 6vw 6vw 7vw 0;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .heart-logo {
     padding: 4vw 6vw 4vw 0;
   }
@@ -411,7 +549,7 @@ button {
 .fa-heart {
   font-size: 1.2em;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .fa-heart {
     font-size: 1.7em;
   }
@@ -425,7 +563,7 @@ footer {
 .footer-title {
   padding: 5vw 0 6vw 5vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .footer-title {
     padding: 3vw 0 2vw 5vw;
   }
@@ -436,7 +574,7 @@ footer {
   margin: 0;
   color: white;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .footer-title p {
     font-size: 1.3em;
   }
@@ -445,12 +583,17 @@ footer {
 .topics-footer {
   padding: 0 0 9vw 5vw;
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .topics-footer {
+    padding: 0 0 4vw 5vw;
+  }
+}
 .topics-footer p {
   color: white;
   font-size: 0.85em;
   margin: 1vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .topics-footer p {
     font-size: 1.1em;
     margin: 0.5vw 0;
@@ -469,7 +612,7 @@ footer {
 .footer-logo {
   margin-right: 3vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .footer-logo {
     margin-right: 1vw;
   }
@@ -480,7 +623,7 @@ footer {
   color: white;
   margin: 0;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .fa-utensils {
     margin-right: 1vw;
     font-size: 1em;
@@ -492,7 +635,7 @@ footer {
   color: white;
   margin: 0;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .fa-hands-helping {
     margin-right: 0.6vw;
     font-size: 0.9em;
@@ -501,6 +644,10 @@ footer {
 
 /*Restaurant pages*/
 /*header restaurant*/
+#container {
+  background: #f6f6f6;
+}
+
 .website-presentation {
   display: flex;
   justify-content: center;
@@ -513,7 +660,7 @@ footer {
   font-size: 1.5em;
   font-weight: 400;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .website-presentation h1 {
     font-size: 3.5em;
   }
@@ -525,7 +672,7 @@ footer {
   top: 5vw;
 }
 
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .fa-arrow-left {
     font-size: 2em;
   }
@@ -535,7 +682,7 @@ footer {
 .photo-page-restaurant {
   height: 67vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .photo-page-restaurant {
     height: 47vw;
   }
@@ -557,7 +704,7 @@ footer {
   font-size: 1em;
   font-weight: 300;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurant-menu h2 {
     font-size: 1.6em;
   }
@@ -566,7 +713,7 @@ footer {
   margin: 0;
   font-size: 0.9em;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurant-menu h3 {
     font-size: 1.3em;
   }
@@ -575,7 +722,7 @@ footer {
   margin: 0;
   font-size: 0.85em;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurant-menu p {
     font-size: 1.5em;
   }
@@ -587,7 +734,7 @@ footer {
   align-items: center;
   padding: 8vw 9vw 0 5vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .menu-title {
     padding: 3vw 9vw 0 10vw;
   }
@@ -598,7 +745,7 @@ footer {
   font-weight: 400;
   margin: 0;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .menu-title h1 {
     font-size: 2.3em;
   }
@@ -611,7 +758,7 @@ footer {
 .fa-heart {
   font-size: 1.2em;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .fa-heart {
     font-size: 2em;
   }
@@ -621,7 +768,7 @@ footer {
   margin: 10vw 0 4vw 5vw;
   padding-bottom: 2vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .course-title {
     margin: 4vw 0 4vw 5vw;
   }
@@ -630,7 +777,7 @@ footer {
   border-bottom: solid 1vw #99E2D0;
   width: 31px;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .course-title h2 {
     font-size: 1.6em;
     border-bottom: solid 0.6vw #99E2D0;
@@ -647,7 +794,7 @@ footer {
   padding: 3vw 4vw 3vw 3vw;
   box-shadow: 1vw 1vw 3vw #e7e7e7;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .course-card {
     padding: 3.5vw 5vw 3.5vw 4vw;
     margin: 0 10vw 7vw 10vw;
@@ -665,11 +812,11 @@ footer {
 .order-link {
   display: flex;
   justify-content: center;
-  padding: 13vw 0 21vw 0;
+  padding: 13vw 0 10vw 0;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .order-link {
-    padding: 3vw 0 12vw 0;
+    padding: 3vw 0 2vw 0;
   }
 }
 
@@ -679,7 +826,7 @@ footer {
   color: white;
   padding: 0 7vw;
 }
-@media only screen and (min-width: 425px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .text-button {
     font-size: 1.7em;
   }

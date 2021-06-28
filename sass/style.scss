@@ -18,6 +18,12 @@ header {
     justify-content: center;
 }
 
+.website-introduction {
+    @media only screen and (min-width: 1024px) {
+        background: white;
+    }
+}
+
 .website-logo {
     box-shadow: 0vw 0.5vw 1vw darken($quaternary, 15%);
     display: flex;
@@ -29,8 +35,13 @@ header {
         font-family: shrikhand;
         font-size: 1.7em;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 3.5em;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            font-size: 2.5em;
+            box-shadow: 0vw 0.5vw 1vw white;
         }
     }
 }
@@ -44,9 +55,14 @@ header {
         margin: 4vw 0;
         font-size: 0.85em;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.4em;
             font-weight: 400;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            font-size: 1.2em;
+            margin: 2.5vw 0;
         }
     }
 }
@@ -60,8 +76,12 @@ header {
 .fa-map-marker-alt {
     font-size: 0.8em;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         font-size: 1.3em;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 1.1em;
     }
 }
 
@@ -69,15 +89,26 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: lighten($quaternary, 4%);
+    background: lighten($quaternary, 3%);
+
+    @media only screen and (min-width: 1024px) {
+        background: white;
+        align-items: normal;
+        padding-left: 3vw;
+    }
 }
 
 .hat-intro {
     margin: 11vw 19vw 5vw 19vw;
     text-align: center;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         margin: 7vw 0 5vw 0;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        margin: 4vw 0vw 2vw 0vw;
+        text-align: start;
     }
 
     p {
@@ -85,8 +116,12 @@ header {
         font-size: 1.2em;
         font-weight: bold;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.8em;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            font-size: 1.4em;
         }
     }
 }
@@ -95,8 +130,13 @@ header {
     margin: 0 9vw 10vw 9vw;
     text-align: center;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         margin: 0 18vw 8vw 18vw;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        margin: 0 0vw 5vw 0vw;
+        text-align: start;
     }
 
     p {
@@ -104,8 +144,12 @@ header {
         font-size: 0.9em;
         font-weight: 300;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.4em;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            font-size: 1.2em;
         }
     }
 }
@@ -113,8 +157,12 @@ header {
 .restaurant-link {
     margin-bottom: 15vw;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         margin-bottom: 11vw;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        margin-bottom: 7vw;
     }
   }
 
@@ -124,8 +172,12 @@ button {
     border: white;
     padding: 4vw 5.5vw;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         padding: 3vw 6vw;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        padding: 2vw 3vw;
     }
 }
 
@@ -134,8 +186,12 @@ button {
     font-weight: 500;
     color: white;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         font-size: 1.7em;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 1.4em;
     }
 }
 
@@ -144,9 +200,14 @@ button {
         font-size: 1.2em;
         margin: 12vw 0 8vw 5vw;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.6em;
             margin: 6vw 0 6vw 5vw;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            font-size: 1.4em;
+            margin: 6vw 0 5vw 3vw;
         }
     }
 }
@@ -154,8 +215,14 @@ button {
 .topics-function {
     margin-bottom: 17vw;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         margin-bottom: 9vw;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        margin-bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -167,7 +234,7 @@ button {
     border-radius: 6vw;
     box-shadow: 1vw 1vw 3vw darken($quaternary, 5%);
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         margin: 0 14vw 7vw 14vw;
         border-radius: 4vw;
     }
@@ -177,8 +244,12 @@ button {
     color: darken($quaternary, 50%);;
     padding: 7.5vw;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         padding: 5vw;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        padding: 3vw;
     }
 }
 
@@ -189,18 +260,31 @@ button {
     color: $primary;
     padding: 7.5vw;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         padding: 5vw;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        padding: 3vw;
     }
 }
 
 .text-function {
+    @media only screen and (min-width: 1024px) {
+        margin-right: 3vw;
+    }
+
     p {
         font-size: 0.8em;
         font-weight: 500;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.3em;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            font-size: 1.1em;
+            margin: 0;
         }
     }
 }
@@ -208,24 +292,36 @@ button {
 .fa-mobile-alt {
     font-size: 1em;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         font-size: 1.3em;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 1.2em;
     }
 }
 
 .fa-list {
     font-size: 0.9em;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         font-size: 1.15em;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 1.2em;
     }
 }
 
 .fa-store {
     font-size: 0.8em;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         font-size: 1.1em;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 1.2em;
     }
 }
 
@@ -235,9 +331,14 @@ button {
     padding: 1vw 2vw;
     margin-left: -3.5vw;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         padding: 0.6vw 1.3vw;
         margin-left: -2vw;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        padding: 0.7vw 1vw;
+        margin-left: -1vw;
     }
 
     p {
@@ -245,7 +346,7 @@ button {
         color: white;
         font-size: 0.7em;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1em;
         }
     }
@@ -255,17 +356,26 @@ button {
     padding: 4vw 0 12vw 0;
     background: lighten($quaternary, 4%);
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         padding: 4vw 0 2vw 0;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        padding: 1vw 0 12vw 0;
     }
 
     h1 {
         font-size: 1.2em;
         margin: 12vw 0 5vw 5vw;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.6em;
             margin: 5vw 0 7vw 5vw;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            font-size: 1.4em;
+            margin: 0vw 0 5vw 3vw;
         }
     }
 }
@@ -275,7 +385,7 @@ button {
     flex-direction: column;
     margin: 0 5.6vw;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         margin: 0 10vw;
     }
 }
@@ -286,7 +396,7 @@ button {
     margin-bottom: 5vw;
     box-shadow: 1vw 1vw 3vw darken($quaternary, 2%);
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         margin-bottom: 8vw;
     }
 }
@@ -294,8 +404,12 @@ button {
 .photo-restaurant {
     height: 46vw;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         height: 33vw;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        height: 22vw;
     }
 
     img {
@@ -324,7 +438,7 @@ button {
         font-weight: 500;
         color: darken($tertiary, 40%);
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.1em;
         }
     }
@@ -344,7 +458,7 @@ button {
         font-weight: 500;
         color: darken($tertiary, 40%);
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.1em;
         }
     }
@@ -358,7 +472,7 @@ button {
 .restaurant-name {
     margin: 4vw 0 0 3.5vw;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         margin: 2vw 0 0 3.5vw;
     }
 
@@ -366,7 +480,7 @@ button {
         margin: 0;
         font-size: 0.9em;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.3em;
         }
     } 
@@ -375,7 +489,7 @@ button {
 .restaurant-location {
     margin: 1vw 0 4.5vw 3.5vw;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         margin: 1vw 0 3vw 3.5vw;
     }
 
@@ -384,7 +498,7 @@ button {
         font-size: 0.85em;
         font-weight: 300;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.2em;
         }
     }
@@ -393,7 +507,7 @@ button {
 .heart-logo {
     padding: 6vw 6vw 7vw 0;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         padding: 4vw 6vw 4vw 0;
     }
 }
@@ -401,7 +515,7 @@ button {
 .fa-heart {
     font-size: 1.2em;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         font-size: 1.7em;
     }
 }
@@ -415,7 +529,7 @@ footer {
 .footer-title {
     padding: 5vw 0 6vw 5vw;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         padding: 3vw 0 2vw 5vw;
     }
 
@@ -425,7 +539,7 @@ footer {
         margin: 0;
         color: white;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.3em;
         }
     }
@@ -434,12 +548,16 @@ footer {
 .topics-footer {
     padding: 0 0 9vw 5vw;
 
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        padding: 0 0 4vw 5vw;
+    }
+
     p {
         color: white;
         font-size: 0.85em;
         margin: 1vw;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.1em;
             margin: 0.5vw 0;
         }
@@ -459,7 +577,7 @@ footer {
 .footer-logo {
     margin-right: 3vw;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         margin-right: 1vw;
     }
 }
@@ -469,7 +587,7 @@ footer {
     color: white;
     margin: 0;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         margin-right: 1vw;
         font-size: 1em;
     }
@@ -480,7 +598,7 @@ footer {
     color: white;
     margin: 0;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         margin-right: 0.6vw;
         font-size: 0.9em;
     }
@@ -489,6 +607,10 @@ footer {
 /*Restaurant pages*/
 
 /*header restaurant*/
+
+#container {
+    background: lighten($quaternary, 4%);
+}
 
 .website-presentation {
     display: flex;
@@ -502,7 +624,7 @@ footer {
         font-size: 1.5em;
         font-weight: 400;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 3.5em;
         }
     }
@@ -515,7 +637,7 @@ footer {
 }
 
 .fa-arrow-left {
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         font-size: 2em;
     }
 }
@@ -525,7 +647,7 @@ footer {
 .photo-page-restaurant {
     height: 67vw;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         height: 47vw;
     }
 
@@ -547,7 +669,7 @@ footer {
         font-size: 1em;
         font-weight: 300;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.6em;
         }
     }
@@ -556,7 +678,7 @@ footer {
         margin: 0;
         font-size: 0.9em;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.3em;
         }    
     }
@@ -565,7 +687,7 @@ footer {
         margin: 0;
         font-size: 0.85em;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.5em;
         }    
     }
@@ -577,7 +699,7 @@ footer {
     align-items: center;
     padding: 8vw 9vw 0 5vw;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         padding: 3vw 9vw 0 10vw;
     }
 
@@ -587,7 +709,7 @@ footer {
         font-weight: 400;
         margin: 0;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 2.3em;
         }
     }
@@ -600,7 +722,7 @@ footer {
 .fa-heart {
     font-size: 1.2em;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         font-size: 2em;
     }
 }
@@ -609,7 +731,7 @@ footer {
     margin: 10vw 0 4vw 5vw;
     padding-bottom: 2vw;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         margin: 4vw 0 4vw 5vw;
     }
 
@@ -617,7 +739,7 @@ footer {
         border-bottom: solid 1vw $tertiary;
         width: 31px;
 
-        @media only screen and (min-width: 425px) and (max-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.6em;
             border-bottom: solid 0.6vw #99E2D0;
             width: 45px;
@@ -634,7 +756,7 @@ footer {
     padding: 3vw 4vw 3vw 3vw;
     box-shadow: 1vw 1vw 3vw darken($quaternary, 2%);
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         padding: 3.5vw 5vw 3.5vw 4vw;
         margin: 0 10vw 7vw 10vw;
     }
@@ -652,10 +774,10 @@ footer {
 .order-link {
     display: flex;
     justify-content: center;
-    padding: 13vw 0 21vw 0;
+    padding: 13vw 0 10vw 0;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
-        padding: 3vw 0 12vw 0;
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        padding: 3vw 0 2vw 0;
     }
 }
 
@@ -665,7 +787,7 @@ footer {
     color: white;
     padding: 0 7vw;
 
-    @media only screen and (min-width: 425px) and (max-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
         font-size: 1.7em;
     }
 }

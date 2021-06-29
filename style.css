@@ -11,12 +11,6 @@ header {
   justify-content: center;
 }
 
-@media only screen and (min-width: 1024px) {
-  .website-introduction {
-    background: white;
-  }
-}
-
 .website-logo {
   box-shadow: 0vw 0.5vw 1vw #c6c6c6;
   display: flex;
@@ -40,6 +34,7 @@ header {
   }
 }
 
+/*main*/
 .location {
   display: flex;
   justify-content: center;
@@ -138,7 +133,7 @@ header {
 }
 @media only screen and (min-width: 1024px) {
   .text-intro {
-    margin: 0 0vw 5vw 0vw;
+    margin: 0 0vw 3.5vw 0vw;
     text-align: start;
   }
 }
@@ -168,7 +163,7 @@ header {
 }
 @media only screen and (min-width: 1024px) {
   .restaurant-link {
-    margin-bottom: 7vw;
+    margin-bottom: 4vw;
   }
 }
 
@@ -218,7 +213,7 @@ button {
 @media only screen and (min-width: 1024px) {
   .function h1 {
     font-size: 1.4em;
-    margin: 6vw 0 5vw 3vw;
+    margin: 5vw 0 4vw 3vw;
   }
 }
 
@@ -242,7 +237,7 @@ button {
   display: flex;
   align-items: center;
   background: #f9f9f9;
-  margin: 0 5vw 5vw 9vw;
+  margin: 0 5vw 4vw 9vw;
   border-radius: 6vw;
   box-shadow: 1vw 1vw 3vw #dfdfdf;
 }
@@ -388,7 +383,7 @@ button {
 }
 @media only screen and (min-width: 1024px) {
   .restaurants-presentation {
-    padding: 1vw 0 12vw 0;
+    padding: 1vw 0 2vw 0;
   }
 }
 .restaurants-presentation h1 {
@@ -418,6 +413,15 @@ button {
     margin: 0 10vw;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .bloc-cards-restaurants {
+    display: grid;
+    grid-template-columns: 39.5vw 39.5vw;
+    grid-template-rows: 31vw 31vw;
+    grid-column-gap: 5vw;
+    margin: 0 8vw 0 8vw;
+  }
+}
 
 .card-restaurant {
   background: white;
@@ -441,7 +445,7 @@ button {
 }
 @media only screen and (min-width: 1024px) {
   .photo-restaurant {
-    height: 22vw;
+    height: 18vw;
   }
 }
 .photo-restaurant img {
@@ -463,6 +467,11 @@ button {
   right: 3vw;
   top: 4vw;
 }
+@media only screen and (min-width: 1024px) {
+  .tag-new-1 {
+    padding: 1vw;
+  }
+}
 .tag-new-1 p {
   margin: 0;
   font-size: 0.7em;
@@ -482,6 +491,11 @@ button {
   position: absolute;
   right: 3vw;
   top: 4vw;
+}
+@media only screen and (min-width: 1024px) {
+  .tag-new-2 {
+    padding: 1vw;
+  }
 }
 .tag-new-2 p {
   margin: 0;
@@ -508,6 +522,11 @@ button {
     margin: 2vw 0 0 3.5vw;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .restaurant-name {
+    margin: 1.5vw 0 0 3vw;
+  }
+}
 .restaurant-name h2 {
   margin: 0;
   font-size: 0.9em;
@@ -517,6 +536,11 @@ button {
     font-size: 1.3em;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .restaurant-name h2 {
+    font-size: 1.1em;
+  }
+}
 
 .restaurant-location {
   margin: 1vw 0 4.5vw 3.5vw;
@@ -524,6 +548,11 @@ button {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurant-location {
     margin: 1vw 0 3vw 3.5vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .restaurant-location {
+    margin: 0.6vw 0 0vw 3vw;
   }
 }
 .restaurant-location p {
@@ -536,6 +565,11 @@ button {
     font-size: 1.2em;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .restaurant-location p {
+    font-size: 0.85em;
+  }
+}
 
 .heart-logo {
   padding: 6vw 6vw 7vw 0;
@@ -543,6 +577,11 @@ button {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .heart-logo {
     padding: 4vw 6vw 4vw 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .heart-logo {
+    padding: 2.5vw 4vw 0 0;
   }
 }
 
@@ -568,6 +607,11 @@ footer {
     padding: 3vw 0 2vw 5vw;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .footer-title {
+    padding: 3vw 0 2vw 3vw;
+  }
+}
 .footer-title p {
   font-family: shrikhand;
   font-size: 1em;
@@ -575,6 +619,11 @@ footer {
   color: white;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer-title p {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (min-width: 1024px) {
   .footer-title p {
     font-size: 1.3em;
   }
@@ -588,6 +637,11 @@ footer {
     padding: 0 0 4vw 5vw;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .topics-footer {
+    padding: 0 0 5vw 3vw;
+  }
+}
 .topics-footer p {
   color: white;
   font-size: 0.85em;
@@ -597,6 +651,12 @@ footer {
   .topics-footer p {
     font-size: 1.1em;
     margin: 0.5vw 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .topics-footer p {
+    font-size: 1em;
+    margin: 0.5vw;
   }
 }
 .topics-footer a {
@@ -615,6 +675,11 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .footer-logo {
     margin-right: 1vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .footer-logo {
+    margin-right: 0;
   }
 }
 
@@ -643,11 +708,11 @@ footer {
 }
 
 /*Restaurant pages*/
-/*header restaurant*/
 #container {
   background: #f6f6f6;
 }
 
+/*header restaurant*/
 .website-presentation {
   display: flex;
   justify-content: center;
@@ -665,16 +730,31 @@ footer {
     font-size: 3.5em;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .website-presentation h1 {
+    font-size: 2.5em;
+  }
+}
 
 .logo-arrow {
   position: absolute;
   left: 5vw;
   top: 5vw;
 }
+@media only screen and (min-width: 1024px) {
+  .logo-arrow {
+    top: 4vw;
+  }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .fa-arrow-left {
     font-size: 2em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .fa-arrow-left {
+    font-size: 1.5em;
   }
 }
 
@@ -685,6 +765,11 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .photo-page-restaurant {
     height: 47vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .photo-page-restaurant {
+    height: 42vw;
   }
 }
 .photo-page-restaurant img {
@@ -699,6 +784,12 @@ footer {
   border-radius: 9vw 9vw 0 0;
   background: #f6f6f6;
 }
+@media only screen and (min-width: 1024px) {
+  .restaurant-menu {
+    border-radius: 7vw 7vw 0 0;
+    top: -8vw;
+  }
+}
 .restaurant-menu h2 {
   margin: 0;
   font-size: 1em;
@@ -707,6 +798,11 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurant-menu h2 {
     font-size: 1.6em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .restaurant-menu h2 {
+    font-size: 1.4em;
   }
 }
 .restaurant-menu h3 {
@@ -718,6 +814,12 @@ footer {
     font-size: 1.3em;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .restaurant-menu h3 {
+    font-size: 1em;
+    padding-right: 5vw;
+  }
+}
 .restaurant-menu p {
   margin: 0;
   font-size: 0.85em;
@@ -725,6 +827,11 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurant-menu p {
     font-size: 1.5em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .restaurant-menu p {
+    font-size: 0.95em;
   }
 }
 
@@ -739,6 +846,11 @@ footer {
     padding: 3vw 9vw 0 10vw;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .menu-title {
+    padding: 2vw 9vw 0 8vw;
+  }
+}
 .menu-title h1 {
   font-family: shrikhand;
   font-size: 1.5em;
@@ -750,15 +862,30 @@ footer {
     font-size: 2.3em;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .menu-title h1 {
+    font-size: 2.5em;
+  }
+}
 
 .heart-logo {
   padding: 4vw 6vw 4vw 0;
+}
+@media only screen and (min-width: 1024px) {
+  .heart-logo {
+    padding: 4vw 0 4vw 0;
+  }
 }
 
 .fa-heart {
   font-size: 1.2em;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .fa-heart {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 1024px) {
   .fa-heart {
     font-size: 2em;
   }
@@ -773,6 +900,12 @@ footer {
     margin: 4vw 0 4vw 5vw;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .course-title {
+    margin: 1vw 0 5vw 3vw;
+    padding-bottom: 0vw;
+  }
+}
 .course-title h2 {
   border-bottom: solid 1vw #99E2D0;
   width: 31px;
@@ -782,6 +915,20 @@ footer {
     font-size: 1.6em;
     border-bottom: solid 0.6vw #99E2D0;
     width: 45px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .course-title h2 {
+    border-bottom: solid 0.5vw #99E2D0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .course-cards-bloc {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 3vw;
+    margin-left: 8vw;
   }
 }
 
@@ -798,6 +945,13 @@ footer {
   .course-card {
     padding: 3.5vw 5vw 3.5vw 4vw;
     margin: 0 10vw 7vw 10vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .course-card {
+    margin: 0vw 11vw 4vw 0;
+    padding: 2.5vw 4vw 2.5vw 3vw;
+    border-radius: 5vw;
   }
 }
 
@@ -819,6 +973,17 @@ footer {
     padding: 3vw 0 2vw 0;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .order-link {
+    padding: 2vw 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .order-button {
+    padding: 2vw 2vw;
+  }
+}
 
 .text-button {
   font-size: 1em;
@@ -829,6 +994,11 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .text-button {
     font-size: 1.7em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .text-button {
+    font-size: 1.4em;
   }
 }
 

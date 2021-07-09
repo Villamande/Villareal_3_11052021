@@ -86,22 +86,22 @@ header {
 @media only screen and (min-width: 1024px) {
   .intro {
     align-items: normal;
-    padding-left: 3vw;
+    padding-left: 28px;
   }
 }
 
 .hat-intro {
-  margin: 11vw 19vw 5vw 19vw;
+  margin: 35px 55px 15px 55px;
   text-align: center;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .hat-intro {
-    margin: 7vw 0 5vw 0;
+    margin: 45px 0 35px 0;
   }
 }
 @media only screen and (min-width: 1024px) {
   .hat-intro {
-    margin: 4vw 0vw 2vw 0vw;
+    margin: 35px 0vw 20px 0vw;
     text-align: start;
   }
 }
@@ -122,17 +122,17 @@ header {
 }
 
 .text-intro {
-  margin: 0 9vw 10vw 9vw;
+  margin: 0 25px 30px 25px;
   text-align: center;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .text-intro {
-    margin: 0 18vw 8vw 18vw;
+    margin: 0 18vw 45px 18vw;
   }
 }
 @media only screen and (min-width: 1024px) {
   .text-intro {
-    margin: 0 0vw 3.5vw 0vw;
+    margin: 0 0vw 35px 0vw;
     text-align: start;
   }
 }
@@ -153,16 +153,16 @@ header {
 }
 
 .restaurant-link {
-  margin-bottom: 15vw;
+  margin-bottom: 45px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurant-link {
-    margin-bottom: 11vw;
+    margin-bottom: 65px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .restaurant-link {
-    margin-bottom: 8vw;
+    margin-bottom: 62px;
   }
 }
 
@@ -171,6 +171,11 @@ button {
   border-radius: 9vw;
   border: white;
   padding: 4vw 5.5vw;
+  box-shadow: 1vw 1vw 3vw #b9b9b9;
+}
+button:hover {
+  background: linear-gradient(0deg, #a167e0, #ff8de0);
+  box-shadow: 1vw 1vw 2vw #868686;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   button {
@@ -201,41 +206,41 @@ button {
 
 .function {
   background: white;
-  padding: 12vw 0 1vw 0;
+  padding: 38px 0 3px 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .function {
-    padding: 8vw 0 1vw 0;
+    padding: 50px 0 5px 0;
   }
 }
 @media only screen and (min-width: 1024px) {
   .function {
-    padding: 7vw 0 3vw 0;
+    padding: 50px 0 25px 0;
   }
 }
 .function h1 {
   font-size: 1.2em;
-  margin: 0 0 8vw 5vw;
+  margin: 0 0 25px 5vw;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .function h1 {
     font-size: 1.6em;
-    margin: 0 0 6vw 5vw;
+    margin: 0 0 45px 5vw;
   }
 }
 @media only screen and (min-width: 1024px) {
   .function h1 {
     font-size: 1.4em;
-    margin: 0 0 4vw 3vw;
+    margin: 0 0 28px 30px;
   }
 }
 
 .topics-function {
-  margin-bottom: 17vw;
+  margin-bottom: 55px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .topics-function {
-    margin-bottom: 9vw;
+    margin-bottom: 75px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -401,18 +406,18 @@ button {
 }
 .restaurants-presentation h1 {
   font-size: 1.2em;
-  margin: 0 0 5vw 5vw;
+  margin: 0 0 25px 5vw;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurants-presentation h1 {
     font-size: 1.6em;
-    margin: 0 0 7vw 5vw;
+    margin: 0 0 45px 35px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .restaurants-presentation h1 {
     font-size: 1.4em;
-    margin: 0vw 0 5vw 3vw;
+    margin: 0vw 0 50px 28px;
   }
 }
 
@@ -598,31 +603,46 @@ button {
   }
 }
 
-.fa-heart {
+.homepage-logo {
   font-size: 1.2em;
 }
+.homepage-logo:active > .heart-in-progress {
+  opacity: 1;
+  animation-name: heart-in-progress;
+  animation-duration: 1000ms;
+  color: #9656DC;
+  font-weight: 600;
+}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .fa-heart {
+  .homepage-logo {
     font-size: 1.7em;
   }
 }
 
+@keyframes heart-in-progress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 /*Footer homepage and restaurants*/
 footer {
   background: #2E2E2E;
 }
 
 .footer-title {
-  padding: 5vw 0 6vw 5vw;
+  padding: 15px 0 8px 15px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .footer-title {
-    padding: 3vw 0 2vw 5vw;
+    padding: 25px 0 15px 35px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .footer-title {
-    padding: 3vw 0 2vw 3vw;
+    padding: 24px 0 12px 30px;
   }
 }
 .footer-title p {
@@ -643,33 +663,33 @@ footer {
 }
 
 .topics-footer {
-  padding: 0 0 9vw 5vw;
+  padding: 0 0 20px 15px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .topics-footer {
-    padding: 0 0 4vw 5vw;
+    padding: 0 0 35px 35px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .topics-footer {
-    padding: 0 0 5vw 3vw;
+    padding: 0 0 30px 30px;
   }
 }
 .topics-footer p {
   color: white;
   font-size: 0.85em;
-  margin: 1vw;
+  margin: 4px 0 0 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .topics-footer p {
     font-size: 1.1em;
-    margin: 0.5vw 0;
+    margin: 5px 0 0 0;
   }
 }
 @media only screen and (min-width: 1024px) {
   .topics-footer p {
     font-size: 1em;
-    margin: 0.5vw;
+    margin: 5px 0 0 5px;
   }
 }
 .topics-footer a {
@@ -683,11 +703,11 @@ footer {
 }
 
 .footer-logo {
-  margin-right: 3vw;
+  margin-right: 5px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .footer-logo {
-    margin-right: 1vw;
+    margin-right: 0;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -703,7 +723,7 @@ footer {
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .fa-utensils {
-    margin-right: 1vw;
+    margin-right: 7px;
     font-size: 1em;
   }
 }
@@ -715,7 +735,7 @@ footer {
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .fa-hands-helping {
-    margin-right: 0.6vw;
+    margin-right: 3px;
     font-size: 0.9em;
   }
 }
@@ -760,6 +780,9 @@ footer {
   }
 }
 
+.fa-arrow-left {
+  color: black;
+}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .fa-arrow-left {
     font-size: 2em;

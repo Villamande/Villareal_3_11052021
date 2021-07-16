@@ -5,6 +5,33 @@ body {
   margin: 0;
 }
 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 1;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 3s;
+}
+.loader:hover {
+  transform: translate(0, -50px);
+  transition: transform 330ms ease-in-out;
+  opacity: 1;
+}
+
+#container {
+  z-index: 0;
+}
+
+#black-ustensils {
+  font-size: 10em;
+  color: black;
+}
+
 /*header*/
 header {
   display: flex;
@@ -184,7 +211,7 @@ button:hover {
 }
 @media only screen and (min-width: 1024px) {
   button {
-    padding: 2vw 3vw;
+    padding: 1.5vw 3vw;
   }
 }
 
@@ -265,6 +292,11 @@ button:hover {
     border-radius: 4vw;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .topic-function {
+    margin: 0 15px 45px 50px;
+  }
+}
 
 .function-logo {
   color: #6d6d6d;
@@ -277,7 +309,7 @@ button:hover {
 }
 @media only screen and (min-width: 1024px) {
   .function-logo {
-    padding: 3vw;
+    padding: 2vw 1.5vw;
   }
 }
 
@@ -294,13 +326,13 @@ button:hover {
 }
 @media only screen and (min-width: 1024px) {
   .store-logo {
-    padding: 3vw;
+    padding: 2vw 1.5vw;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .text-function {
-    margin-right: 3vw;
+    margin-right: 2vw;
   }
 }
 .text-function p {
@@ -375,7 +407,7 @@ button:hover {
 }
 @media only screen and (min-width: 1024px) {
   .number {
-    padding: 0.7vw 1vw;
+    padding: 0.44vw 0.72vw;
     margin-left: -1vw;
   }
 }
@@ -452,6 +484,12 @@ button:hover {
     margin-bottom: 8vw;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .card-restaurant {
+    border-radius: 3vw;
+    margin-bottom: 5.85vw;
+  }
+}
 
 .photo-restaurant {
   height: 46vw;
@@ -480,14 +518,19 @@ button:hover {
 .tag-new-1 {
   background: #99E2D0;
   padding: 1.5vw 3vw 1.5vw 3vw;
-  border-radius: 1vw;
   position: absolute;
   right: 3vw;
   top: 4vw;
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .tag-new-1 {
+    padding: 1vw 2.5vw 1vw 2.5vw;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .tag-new-1 {
-    padding: 1vw;
+    top: 2vw;
+    padding: 0.7vw;
   }
 }
 .tag-new-1 p {
@@ -505,14 +548,19 @@ button:hover {
 .tag-new-2 {
   background: #99E2D0;
   padding: 1.5vw 3vw 1.5vw 3vw;
-  border-radius: 1vw;
   position: absolute;
   right: 3vw;
   top: 4vw;
 }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .tag-new-2 {
+    padding: 1vw 2.5vw 1vw 2.5vw;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .tag-new-2 {
-    padding: 1vw;
+    top: 2vw;
+    padding: 0.7vw;
   }
 }
 .tag-new-2 p {
@@ -591,6 +639,8 @@ button:hover {
 
 .heart-logo {
   padding: 6vw 6vw 7vw 0;
+  transform-origin: bottom;
+  opacity: 1;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .heart-logo {
@@ -606,27 +656,100 @@ button:hover {
 .homepage-logo {
   font-size: 1.2em;
 }
-.homepage-logo:active > .heart-in-progress {
-  opacity: 1;
-  animation-name: heart-in-progress;
-  animation-duration: 1000ms;
-  color: #9656DC;
-  font-weight: 600;
-}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .homepage-logo {
     font-size: 1.7em;
   }
 }
 
-@keyframes heart-in-progress {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
+.full-heart-new {
+  padding: 6vw 6vw 7vw 0;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: opacity 2s;
+}
+.full-heart-new:active {
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .full-heart-new {
+    padding: 4vw 6vw 4vw 0;
   }
 }
+@media only screen and (min-width: 1024px) {
+  .full-heart-new {
+    padding: 2.5vw 4vw 0 0;
+  }
+  .full-heart-new:hover {
+    opacity: 1;
+  }
+}
+
+.full-heart-1 {
+  padding: 6vw 6vw 7vw 0;
+  position: absolute;
+  right: 5.5vw;
+  opacity: 0;
+  transition: opacity 2s;
+}
+.full-heart-1:active {
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .full-heart-1 {
+    padding: 4vw 6vw 4vw 0;
+    right: 10vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .full-heart-1 {
+    padding: 2.5vw 4vw 0 0;
+    right: 52.5vw;
+  }
+  .full-heart-1:hover {
+    opacity: 1;
+  }
+}
+
+.full-heart-2 {
+  padding: 6vw 6vw 7vw 0;
+  position: absolute;
+  right: 5.5vw;
+  opacity: 0;
+  transition: opacity 2s;
+}
+.full-heart-2:active {
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .full-heart-2 {
+    padding: 4vw 6vw 4vw 0;
+    right: 10vw;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .full-heart-2 {
+    padding: 2.5vw 4vw 0 0;
+    right: 8vw;
+  }
+  .full-heart-2:hover {
+    opacity: 1;
+  }
+}
+
+#homepage-logo-full {
+  font-size: 1.2em;
+  font-weight: 900;
+  -webkit-background-clip: text;
+  background: linear-gradient(0deg, #FF79DA, #9656DC);
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #homepage-logo-full {
+    font-size: 1.7em;
+  }
+}
+
 /*Footer homepage and restaurants*/
 footer {
   background: #2E2E2E;
@@ -689,7 +812,7 @@ footer {
 @media only screen and (min-width: 1024px) {
   .topics-footer p {
     font-size: 1em;
-    margin: 5px 0 0 5px;
+    margin: 7px 0 0 5px;
   }
 }
 .topics-footer a {
@@ -741,7 +864,7 @@ footer {
 }
 
 /*Restaurant pages*/
-#container {
+main {
   background: #f6f6f6;
 }
 
@@ -751,6 +874,12 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  .website-presentation {
+    justify-content: flex-start;
+    width: 59%;
+  }
 }
 .website-presentation h1 {
   margin: 2vw 0;
@@ -769,14 +898,41 @@ footer {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .arrow-bloc {
+    display: flex;
+    align-items: center;
+    width: 41%;
+  }
+}
+
 .logo-arrow {
   position: absolute;
-  left: 5vw;
-  top: 5vw;
+  top: 17px;
+  left: 21px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo-arrow {
+    top: 45px;
+    left: 46px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .logo-arrow {
-    top: 4vw;
+    position: static;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.white-bloc {
+  display: none;
+  width: 10%;
+  color: white;
+}
+@media only screen and (min-width: 1024px) {
+  .white-bloc {
+    display: flex;
   }
 }
 
@@ -805,7 +961,7 @@ footer {
 }
 @media only screen and (min-width: 1024px) {
   .photo-page-restaurant {
-    height: 42vw;
+    height: 40vw;
   }
 }
 .photo-page-restaurant img {
@@ -823,7 +979,7 @@ footer {
 @media only screen and (min-width: 1024px) {
   .restaurant-menu {
     border-radius: 7vw 7vw 0 0;
-    top: -8vw;
+    top: -6vw;
   }
 }
 .restaurant-menu h2 {
@@ -853,7 +1009,6 @@ footer {
 @media only screen and (min-width: 1024px) {
   .restaurant-menu h3 {
     font-size: 1em;
-    padding-right: 7vw;
   }
 }
 .restaurant-menu p {
@@ -905,11 +1060,11 @@ footer {
 }
 
 .heart-restaurant {
-  padding: 4vw 6vw 4vw 0;
+  padding: 4vw 0 4vw 0;
 }
 @media only screen and (min-width: 1024px) {
   .heart-restaurant {
-    padding: 4vw 0 4vw 0;
+    padding: 40px 0 75px 0;
   }
 }
 
@@ -938,7 +1093,7 @@ footer {
 }
 @media only screen and (min-width: 1024px) {
   .course-title {
-    margin: 1vw 0 5vw 3vw;
+    margin: 0 0 52px 50px;
     padding-bottom: 0vw;
   }
 }
@@ -955,16 +1110,16 @@ footer {
 }
 @media only screen and (min-width: 1024px) {
   .course-title h2 {
-    border-bottom: solid 0.5vw #99E2D0;
+    border-bottom: solid 5px #99E2D0;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .course-cards-bloc {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin: 0 3vw;
-    margin-left: 8vw;
+    margin-left: 6vw;
   }
 }
 
@@ -976,6 +1131,11 @@ footer {
   margin: 4vw 4vw 0 5vw;
   padding: 3vw 4vw 3vw 3vw;
   box-shadow: 1vw 1vw 3vw #e7e7e7;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.course-card:hover {
+  opacity: 1;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .course-card {
@@ -985,15 +1145,21 @@ footer {
 }
 @media only screen and (min-width: 1024px) {
   .course-card {
-    margin: 0vw 11vw 4vw 0;
-    padding: 2.5vw 4vw 2.5vw 3vw;
+    margin: 0 0 50px 0;
+    padding: 17px 24px 17px 24px;
     border-radius: 5vw;
+    max-width: 342px;
   }
 }
 
 .course-price {
   display: flex;
   align-items: center;
+}
+@media only screen and (min-width: 1024px) {
+  .course-price {
+    margin-left: 28px;
+  }
 }
 .course-price p {
   font-weight: 500;
@@ -1011,13 +1177,13 @@ footer {
 }
 @media only screen and (min-width: 1024px) {
   .order-link {
-    padding: 2vw 0 0 0;
+    padding: 15px 0 0 0;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .order-button {
-    padding: 2vw 2vw;
+    padding: 0 2vw;
   }
 }
 

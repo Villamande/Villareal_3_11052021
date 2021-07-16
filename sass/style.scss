@@ -11,7 +11,7 @@ body {
     margin: 0;
 }
 
-.loader {
+/*.loader {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@ body {
 #black-ustensils {
     font-size: 10em;
     color: black;
-}
+}*/
 
 /*header*/
 
@@ -446,6 +446,11 @@ button {
     border-radius: 4vw;
     margin-bottom: 5vw;
     box-shadow: 1vw 1vw 3vw darken($quaternary, 2%);
+    position: relative;
+
+    a {
+        text-decoration: none;
+    }
 
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
         margin-bottom: 8vw;
@@ -555,6 +560,7 @@ button {
     h2 {
         margin: 0;
         font-size: 0.9em;
+        color: black;
 
         @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.3em;
@@ -581,6 +587,7 @@ button {
         margin: 0;
         font-size: 0.85em;
         font-weight: 300;
+        color: black;
 
         @media only screen and (min-width: 768px) and (max-width: 1023px) {
             font-size: 1.2em;
@@ -594,7 +601,6 @@ button {
 
 .heart-logo {
     padding: 6vw 6vw 7vw 0;
-    transform-origin: bottom;
     opacity: 1;
 
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -608,6 +614,7 @@ button {
 
 .homepage-logo {
     font-size: 1.2em;
+    color: black;
 
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
         font-size: 1.7em;
@@ -615,15 +622,10 @@ button {
 }
 
 .full-heart-new {
+    text-decoration: none;
     padding: 6vw 6vw 7vw 0;
     position: absolute;
     right: 0;
-    opacity: 0;
-    transition: opacity 2s;
-
-    &:active {
-        opacity: 1;
-    }
 
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
         padding: 4vw 6vw 4vw 0;
@@ -631,75 +633,31 @@ button {
 
     @media only screen and (min-width: 1024px) {
         padding: 2.5vw 4vw 0 0;
-
-        &:hover {
-            opacity: 1;
-        }
-    }
-}
-
-.full-heart-1 {
-    padding: 6vw 6vw 7vw 0;
-    position: absolute;
-    right: 5.5vw;
-    opacity: 0;
-    transition: opacity 2s;
-
-    &:active {
-        opacity: 1;
-    }
-
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
-        padding: 4vw 6vw 4vw 0;
-        right: 10vw;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        padding: 2.5vw 4vw 0 0;
-        right: 52.5vw;
-
-        &:hover {
-            opacity: 1;
-        }
-    }
-}
-
-.full-heart-2 {
-    padding: 6vw 6vw 7vw 0;
-    position: absolute;
-    right: 5.5vw;
-    opacity: 0;
-    transition: opacity 2s;
-
-    &:active {
-        opacity: 1;
-    }
-
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
-        padding: 4vw 6vw 4vw 0;
-        right: 10vw;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        padding: 2.5vw 4vw 0 0;
-        right: 8vw;
-
-        &:hover {
-            opacity: 1;
-        }
     }
 }
 
 #homepage-logo-full {
     font-size: 1.2em;
     font-weight: 900;
-    -webkit-background-clip: text;
-    background: linear-gradient(0deg, $secondary, $primary);
+    opacity: 0;
+    transition: opacity 2s;
 
+    
+    &:hover {
+        opacity: 1;
+    }
 
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
         font-size: 1.7em;
     }
+
+    /*@media only screen and (min-width: 1024px) {
+        &:hover {
+            -webkit-background-clip: text;
+            background: linear-gradient(0deg,#FF79DA, #9656DC);
+            opacity: 1;
+        }
+    }*/
 }
 
 /*Footer homepage and restaurants*/
@@ -762,7 +720,7 @@ footer {
         }
     }
 
-    a {
+    .e-mail {
         text-decoration: none;
         color: white;
     }

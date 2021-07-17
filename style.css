@@ -1139,13 +1139,13 @@ main {
   justify-content: center;
   align-items: center;
   transition: transform 500ms ease-in-out;
+  /*&:active + .circle-check {
+      transform: rotate(1turn);
+  }*/
 }
 .selection-space:active {
   visibility: visible;
   transform: translate(-100%, 0);
-}
-.selection-space:active + .circle-check {
-  transform: rotate(1turn);
 }
 @media only screen and (min-width: 1024px) {
   .selection-space {

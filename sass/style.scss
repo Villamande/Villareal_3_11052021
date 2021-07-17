@@ -1071,9 +1071,9 @@ main {
         transform: translate(-100%, 0);
     }
 
-    &:active + .circle-check {
+    /*&:active + .circle-check {
         transform: rotate(1turn);
-    }
+    }*/
 
     @media only screen and (min-width: 1024px) {
         width: 70px;

@@ -645,7 +645,6 @@ button:hover {
 
 .heart-logo {
   padding: 6vw 6vw 7vw 0;
-  opacity: 1;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .heart-logo {
@@ -660,7 +659,7 @@ button:hover {
 
 .homepage-logo {
   font-size: 1.2em;
-  color: black;
+  font-weight: 400;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .homepage-logo {
@@ -669,41 +668,43 @@ button:hover {
 }
 
 .full-heart-new {
-  text-decoration: none;
-  padding: 6vw 6vw 7vw 0;
+  padding: 5.8vw 5.7vw 7vw 0;
   position: absolute;
   right: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .full-heart-new {
-    padding: 4vw 6vw 4vw 0;
+    padding: 3.9vw 5.75vw 3.9vw 0;
   }
 }
 @media only screen and (min-width: 1024px) {
   .full-heart-new {
-    padding: 2.5vw 4vw 0 0;
+    padding: 2.46vw 3.9vw 0 0;
   }
 }
 
 #homepage-logo-full {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 900;
   opacity: 0;
-  transition: opacity 2s;
-  /*@media only screen and (min-width: 1024px) {
-      &:hover {
-          -webkit-background-clip: text;
-          background: linear-gradient(0deg,#FF79DA, #9656DC);
-          opacity: 1;
-      }
-  }*/
 }
-#homepage-logo-full:hover {
+#homepage-logo-full:active {
+  background: linear-gradient(0deg, #FF79DA, #9656DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 1;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   #homepage-logo-full {
-    font-size: 1.7em;
+    font-size: 1.9em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #homepage-logo-full:hover {
+    background: linear-gradient(0deg, #FF79DA, #9656DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
   }
 }
 
@@ -1088,11 +1089,10 @@ main {
   margin: 4vw 4vw 0 5vw;
   padding: 3vw 4vw 3vw 3vw;
   box-shadow: 1vw 1vw 3vw #e7e7e7;
-  opacity: 0;
-  transition: opacity 1s;
+  position: relative;
 }
 .course-card:hover {
-  opacity: 1;
+  cursor: grab;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .course-card {
@@ -1113,6 +1113,10 @@ main {
   display: flex;
   align-items: center;
 }
+.course-price:active + .selection-space {
+  visibility: visible;
+  transform: translate(-100%, 0);
+}
 @media only screen and (min-width: 1024px) {
   .course-price {
     margin-left: 28px;
@@ -1120,6 +1124,64 @@ main {
 }
 .course-price p {
   font-weight: 500;
+}
+
+.selection-space {
+  position: absolute;
+  background: #99E2D0;
+  visibility: hidden;
+  left: 100%;
+  top: 0%;
+  width: 48px;
+  height: 53px;
+  border-radius: 0 4vw 4vw 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 500ms ease-in-out;
+  /*&:active + .circle-check {
+      transform: rotate(1turn);
+  }*/
+}
+.selection-space:active {
+  visibility: visible;
+  transform: translate(-100%, 0);
+}
+@media only screen and (min-width: 1024px) {
+  .selection-space {
+    width: 70px;
+    height: 72px;
+    border-radius: 0 5vw 5vw 0;
+    /*&:hover {
+        left: 82.1%;
+        visibility: visible;
+        cursor: grab;
+    }*/
+  }
+}
+
+.circle-check {
+  display: flex;
+  justify-content: center;
+  background: white;
+  border-radius: 5vw;
+  padding: 0px;
+  transition: transform 500ms ease-in-out;
+}
+.circle-check:active {
+  transform: rotate(1turn);
+}
+
+.check {
+  color: #99E2D0;
+  padding: 0.3vw 0.7vw;
+  font-size: 0.8em;
+}
+@media only screen and (min-width: 1024px) {
+  .check {
+    padding: 0.3vw 0.5vw;
+    font-size: 1em;
+  }
 }
 
 .order-link {

@@ -625,6 +625,10 @@ button {
     position: absolute;
     right: 0;
 
+    &:hover {
+        cursor: grab;
+    }
+
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
         padding: 3.9vw 5.75vw 3.9vw 0;
     }

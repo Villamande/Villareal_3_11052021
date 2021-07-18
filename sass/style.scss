@@ -11,7 +11,7 @@ body {
     margin: 0;
 }
 
-/*.loader {
+.loader {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,7 @@ body {
 #black-ustensils {
     font-size: 10em;
     color: black;
-}*/
+}
 
 /*header*/
 
@@ -624,6 +624,10 @@ button {
     padding: 5.8vw 5.7vw 7vw 0;
     position: absolute;
     right: 0;
+
+    &:hover {
+        cursor: grab;
+    }
 
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
         padding: 3.9vw 5.75vw 3.9vw 0;

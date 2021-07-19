@@ -3,6 +3,83 @@ $secondary: #FF79DA;
 $tertiary: #99E2D0;
 $quaternary: #ECECEC;
 
+@keyframes loader-appearance {
+    0% {
+        z-index: 4;
+        opacity: 1;
+    }
+
+    50% {
+        z-index: 4;
+        opacity: 1;
+    }
+
+    80% {
+        z-index: 4;
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 0;
+    }
+
+    100% {
+        z-index: -2;
+        opacity: 0;
+    }
+}
+
+@keyframes ustensils-moove {
+    0% {
+        transform: translate(0, -50px);
+    }
+    10% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(0, -50px);
+    }
+    30% {
+        transform: translate(0, 0);
+    }
+    40% {
+        transform: translate(0, -50px);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    60% {
+        transform: translate(0, -50px);
+    }
+    65% {
+        transform: translate(0, -50px);
+    }
+    70% {
+        transform: translate(0, 0);
+    }
+    75% {
+        transform: translate(0, 0);
+    }
+    80% {
+        transform: translate(0, -50px);
+    }
+    90% {
+        transform: translate(0, -50px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes courses-appearance {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /*Homepage*/
 
 body {
@@ -18,25 +95,29 @@ body {
     width: 100%;
     height: 100%;
     background: white;
-    z-index: 1;
     position: absolute;
+    z-index: -2;
     opacity: 0;
-    transition: opacity 3s;
+    animation: loader-appearance 3s;
+}
 
-    &:hover {
-        transform: translate(0, -50px);
-        transition: transform 330ms ease-in-out;
-        opacity: 1;
+#black-ustensils {
+    font-size: 7em;
+    color: black;
+    animation: ustensils-moove 2500ms;
+
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        font-size: 8em;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 10em;
     }
 }
 
 #container {
-    z-index: 0;
-}
-
-#black-ustensils {
-    font-size: 10em;
-    color: black;
+    z-index: 1;
+    position: relative;
 }
 
 /*header*/
@@ -448,10 +529,6 @@ button {
     box-shadow: 1vw 1vw 3vw darken($quaternary, 2%);
     position: relative;
 
-    a {
-        text-decoration: none;
-    }
-
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
         margin-bottom: 8vw;
     }
@@ -541,6 +618,10 @@ button {
     }
 }
 
+.restaurant-link-a {
+    text-decoration: none;
+}
+
 .restaurant-informations {
     display: flex;
     justify-content: space-between;
@@ -626,7 +707,7 @@ button {
     right: 0;
 
     &:hover {
-        cursor: grab;
+        cursor: pointer;
     }
 
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -724,7 +805,7 @@ footer {
         }
     }
 
-    .e-mail {
+    a {
         text-decoration: none;
         color: white;
     }
@@ -953,6 +1034,10 @@ main {
     }
 }
 
+.heart-box {
+    position: relative;
+}
+
 .heart-restaurant {
     padding: 4vw 0 4vw 0;
 
@@ -970,6 +1055,49 @@ main {
 
     @media only screen and (min-width: 1024px) {
         font-size: 2em;
+    }
+}
+
+.full-heart-restaurant {
+    padding: 4vw 0 4vw 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        padding: 40px 0 75px 0;
+    }
+}
+
+#full-restaurant-logo {
+    font-size: 1.2em;
+    font-weight: 900;
+    opacity: 0;
+
+    &:active {
+        background: linear-gradient(0deg, $secondary, $primary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        font-size: 2em;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 2em;
+
+        &:hover {
+            background: linear-gradient(0deg, $secondary, $primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 1;
+        }
     }
 }
 
@@ -1020,9 +1148,10 @@ main {
     padding: 3vw 4vw 3vw 3vw;
     box-shadow: 1vw 1vw 3vw darken($quaternary, 2%);
     position: relative;
+    animation: courses-appearance 3s 1s;
 
     &:hover {
-        cursor: grab;
+        cursor: pointer;
     }
 
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -1087,7 +1216,7 @@ main {
         /*&:hover {
             left: 82.1%;
             visibility: visible;
-            cursor: grab;
+            cursor: pointer;
         }*/
     }
 }

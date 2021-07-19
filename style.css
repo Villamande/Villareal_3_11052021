@@ -1,3 +1,73 @@
+@keyframes loader-appearance {
+  0% {
+    z-index: 4;
+    opacity: 1;
+  }
+  50% {
+    z-index: 4;
+    opacity: 1;
+  }
+  80% {
+    z-index: 4;
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    z-index: -2;
+    opacity: 0;
+  }
+}
+@keyframes ustensils-moove {
+  0% {
+    transform: translate(0, -50px);
+  }
+  10% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(0, -50px);
+  }
+  30% {
+    transform: translate(0, 0);
+  }
+  40% {
+    transform: translate(0, -50px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  60% {
+    transform: translate(0, -50px);
+  }
+  65% {
+    transform: translate(0, -50px);
+  }
+  70% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(0, 0);
+  }
+  80% {
+    transform: translate(0, -50px);
+  }
+  90% {
+    transform: translate(0, -50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes courses-appearance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*Homepage*/
 body {
   font-family: roboto, sans-serif;
@@ -12,24 +82,31 @@ body {
   width: 100%;
   height: 100%;
   background: white;
-  z-index: 1;
   position: absolute;
+  z-index: -2;
   opacity: 0;
-  transition: opacity 3s;
-}
-.loader:hover {
-  transform: translate(0, -50px);
-  transition: transform 330ms ease-in-out;
-  opacity: 1;
-}
-
-#container {
-  z-index: 0;
+  animation: loader-appearance 3s;
 }
 
 #black-ustensils {
-  font-size: 10em;
+  font-size: 7em;
   color: black;
+  animation: ustensils-moove 2500ms;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #black-ustensils {
+    font-size: 8em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #black-ustensils {
+    font-size: 10em;
+  }
+}
+
+#container {
+  z-index: 1;
+  position: relative;
 }
 
 /*header*/
@@ -480,9 +557,6 @@ button:hover {
   box-shadow: 1vw 1vw 3vw #e7e7e7;
   position: relative;
 }
-.card-restaurant a {
-  text-decoration: none;
-}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .card-restaurant {
     margin-bottom: 8vw;
@@ -579,6 +653,10 @@ button:hover {
   }
 }
 
+.restaurant-link-a {
+  text-decoration: none;
+}
+
 .restaurant-informations {
   display: flex;
   justify-content: space-between;
@@ -673,7 +751,7 @@ button:hover {
   right: 0;
 }
 .full-heart-new:hover {
-  cursor: grab;
+  cursor: pointer;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .full-heart-new {
@@ -776,7 +854,7 @@ footer {
     margin: 7px 0 0 5px;
   }
 }
-.topics-footer .e-mail {
+.topics-footer a {
   text-decoration: none;
   color: white;
 }
@@ -1020,6 +1098,10 @@ main {
   }
 }
 
+.heart-box {
+  position: relative;
+}
+
 .heart-restaurant {
   padding: 4vw 0 4vw 0;
 }
@@ -1040,6 +1122,49 @@ main {
 @media only screen and (min-width: 1024px) {
   .restaurant-logo {
     font-size: 2em;
+  }
+}
+
+.full-heart-restaurant {
+  padding: 4vw 0 4vw 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.full-heart-restaurant:hover {
+  cursor: pointer;
+}
+@media only screen and (min-width: 1024px) {
+  .full-heart-restaurant {
+    padding: 40px 0 75px 0;
+  }
+}
+
+#full-restaurant-logo {
+  font-size: 1.2em;
+  font-weight: 900;
+  opacity: 0;
+}
+#full-restaurant-logo:active {
+  background: linear-gradient(0deg, #FF79DA, #9656DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #full-restaurant-logo {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #full-restaurant-logo {
+    font-size: 2em;
+  }
+  #full-restaurant-logo:hover {
+    background: linear-gradient(0deg, #FF79DA, #9656DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
   }
 }
 
@@ -1093,9 +1218,10 @@ main {
   padding: 3vw 4vw 3vw 3vw;
   box-shadow: 1vw 1vw 3vw #e7e7e7;
   position: relative;
+  animation: courses-appearance 3s 1s;
 }
 .course-card:hover {
-  cursor: grab;
+  cursor: pointer;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .course-card {
@@ -1158,7 +1284,7 @@ main {
     /*&:hover {
         left: 82.1%;
         visibility: visible;
-        cursor: grab;
+        cursor: pointer;
     }*/
   }
 }

@@ -85,7 +85,7 @@ body {
   position: absolute;
   z-index: -2;
   opacity: 0;
-  animation: loader-appearance 3s;
+  animation: loader-appearance 3s ease-in;
 }
 
 #black-ustensils {
@@ -586,7 +586,7 @@ button:hover {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  border-radius: 4vw 4vw 0 0;
+  border-radius: 3vw 3vw 0 0;
 }
 
 .new {
@@ -764,24 +764,99 @@ button:hover {
   }
 }
 
-#homepage-logo-full {
-  font-size: 1.4em;
+#homepage-logo-full-1 {
   font-weight: 900;
+  font-size: 1.4em;
   opacity: 0;
 }
-#homepage-logo-full:active {
+#homepage-logo-full-1:active {
   background: linear-gradient(0deg, #FF79DA, #9656DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 1;
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  #homepage-logo-full {
+  #homepage-logo-full-1 {
     font-size: 1.9em;
   }
 }
 @media only screen and (min-width: 1024px) {
-  #homepage-logo-full:hover {
+  #homepage-logo-full-1:hover {
+    background: linear-gradient(0deg, #FF79DA, #9656DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+  }
+}
+
+#homepage-logo-full-2 {
+  font-weight: 900;
+  font-size: 1.4em;
+  opacity: 0;
+}
+#homepage-logo-full-2:active {
+  background: linear-gradient(0deg, #FF79DA, #9656DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #homepage-logo-full-2 {
+    font-size: 1.9em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #homepage-logo-full-2:hover {
+    background: linear-gradient(0deg, #FF79DA, #9656DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+  }
+}
+
+#homepage-logo-full-3 {
+  font-weight: 900;
+  font-size: 1.4em;
+  opacity: 0;
+}
+#homepage-logo-full-3:active {
+  background: linear-gradient(0deg, #FF79DA, #9656DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #homepage-logo-full-3 {
+    font-size: 1.9em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #homepage-logo-full-3:hover {
+    background: linear-gradient(0deg, #FF79DA, #9656DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 1;
+  }
+}
+
+#homepage-logo-full-4 {
+  font-weight: 900;
+  font-size: 1.4em;
+  opacity: 0;
+}
+#homepage-logo-full-4:active {
+  background: linear-gradient(0deg, #FF79DA, #9656DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #homepage-logo-full-4 {
+    font-size: 1.9em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #homepage-logo-full-4:hover {
     background: linear-gradient(0deg, #FF79DA, #9656DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1098,10 +1173,6 @@ main {
   }
 }
 
-.heart-box {
-  position: relative;
-}
-
 .heart-restaurant {
   padding: 4vw 0 4vw 0;
 }
@@ -1122,49 +1193,6 @@ main {
 @media only screen and (min-width: 1024px) {
   .restaurant-logo {
     font-size: 2em;
-  }
-}
-
-.full-heart-restaurant {
-  padding: 4vw 0 4vw 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.full-heart-restaurant:hover {
-  cursor: pointer;
-}
-@media only screen and (min-width: 1024px) {
-  .full-heart-restaurant {
-    padding: 40px 0 75px 0;
-  }
-}
-
-#full-restaurant-logo {
-  font-size: 1.2em;
-  font-weight: 900;
-  opacity: 0;
-}
-#full-restaurant-logo:active {
-  background: linear-gradient(0deg, #FF79DA, #9656DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 1;
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  #full-restaurant-logo {
-    font-size: 2em;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  #full-restaurant-logo {
-    font-size: 2em;
-  }
-  #full-restaurant-logo:hover {
-    background: linear-gradient(0deg, #FF79DA, #9656DC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    opacity: 1;
   }
 }
 
@@ -1210,6 +1238,7 @@ main {
 }
 
 .course-card {
+  position: relative;
   display: flex;
   justify-content: space-between;
   background: white;
@@ -1218,10 +1247,14 @@ main {
   padding: 3vw 4vw 3vw 3vw;
   box-shadow: 1vw 1vw 3vw #e7e7e7;
   position: relative;
-  animation: courses-appearance 3s 1s;
+  animation: courses-appearance 3s;
 }
 .course-card:hover {
   cursor: pointer;
+}
+.course-card:hover > .selection-space {
+  opacity: 1;
+  transform: translate(-100%, 0);
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .course-card {
@@ -1235,16 +1268,13 @@ main {
     padding: 17px 24px 17px 24px;
     border-radius: 5vw;
     max-width: 342px;
+    animation: courses-appearance 3s 1s;
   }
 }
 
 .course-price {
   display: flex;
   align-items: center;
-}
-.course-price:active + .selection-space {
-  visibility: visible;
-  transform: translate(-100%, 0);
 }
 @media only screen and (min-width: 1024px) {
   .course-price {
@@ -1256,36 +1286,22 @@ main {
 }
 
 .selection-space {
+  opacity: 0;
   position: absolute;
   background: #99E2D0;
-  visibility: hidden;
   left: 100%;
   top: 0%;
-  width: 48px;
-  height: 53px;
+  width: 20%;
+  height: 100%;
   border-radius: 0 4vw 4vw 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: transform 500ms ease-in-out;
-  /*&:active + .circle-check {
-      transform: rotate(1turn);
-  }*/
-}
-.selection-space:active {
-  visibility: visible;
-  transform: translate(-100%, 0);
+  transition: all 500ms ease-in-out;
 }
 @media only screen and (min-width: 1024px) {
   .selection-space {
-    width: 70px;
-    height: 72px;
     border-radius: 0 5vw 5vw 0;
-    /*&:hover {
-        left: 82.1%;
-        visibility: visible;
-        cursor: pointer;
-    }*/
   }
 }
 
@@ -1295,16 +1311,26 @@ main {
   background: white;
   border-radius: 5vw;
   padding: 0px;
-  transition: transform 500ms ease-in-out;
+  transition: transform 500ms;
 }
-.circle-check:active {
+.circle-check:hover {
   transform: rotate(1turn);
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .circle-check {
+    padding: 2px 0;
+  }
 }
 
 .check {
   color: #99E2D0;
   padding: 0.3vw 0.7vw;
   font-size: 0.8em;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .check {
+    font-size: 1em;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .check {

@@ -354,6 +354,15 @@ button {
     border-radius: 6vw;
     box-shadow: 1vw 1vw 3vw darken($quaternary, 5%);
 
+    &:hover {
+        cursor: pointer;
+        background: lighten($primary, 35%);
+    }
+
+    &:hover > .function-logo {
+        color: $primary;
+    }
+
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
         margin: 0 14vw 7vw 14vw;
         border-radius: 4vw;
@@ -366,22 +375,6 @@ button {
 
 .function-logo {
     color: darken($quaternary, 50%);;
-    padding: 7.5vw;
-
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
-        padding: 5vw;
-    }
-
-    @media only screen and (min-width: 1024px) {
-        padding: 2vw 1.5vw;
-    }
-}
-
-
-.store-logo {
-    display: flex;
-    align-items: center;
-    color: $primary;
     padding: 7.5vw;
 
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -723,11 +716,12 @@ button {
     font-weight: 900;
     font-size: 1.4em;
     opacity: 0;
+    background: linear-gradient(0deg, $secondary, $primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: opacity 800ms ease-in-out;
 
     &:active {
-        background: linear-gradient(0deg, $secondary, $primary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         opacity: 1;
     }
 
@@ -737,9 +731,6 @@ button {
 
     @media only screen and (min-width: 1024px) {
         &:hover {
-            background: linear-gradient(0deg, $secondary, $primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             opacity: 1;
         }
     }
@@ -749,11 +740,12 @@ button {
     font-weight: 900;
     font-size: 1.4em;
     opacity: 0;
+    background: linear-gradient(0deg, $secondary, $primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: opacity 2s ease-in-out;
 
     &:active {
-        background: linear-gradient(0deg, $secondary, $primary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         opacity: 1;
     }
 
@@ -763,9 +755,6 @@ button {
 
     @media only screen and (min-width: 1024px) {
         &:hover {
-            background: linear-gradient(0deg, $secondary, $primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             opacity: 1;
         }
     }
@@ -775,11 +764,12 @@ button {
     font-weight: 900;
     font-size: 1.4em;
     opacity: 0;
+    transition: opacity 2s ease-in-out;
+    background: linear-gradient(0deg, $secondary, $primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     &:active {
-        background: linear-gradient(0deg, $secondary, $primary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         opacity: 1;
     }
 
@@ -789,9 +779,6 @@ button {
 
     @media only screen and (min-width: 1024px) {
         &:hover {
-            background: linear-gradient(0deg, $secondary, $primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             opacity: 1;
         }
     }
@@ -801,11 +788,12 @@ button {
     font-weight: 900;
     font-size: 1.4em;
     opacity: 0;
+    transition: opacity 2s ease-in-out;
+    background: linear-gradient(0deg, $secondary, $primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     &:active {
-        background: linear-gradient(0deg, $secondary, $primary);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         opacity: 1;
     }
 
@@ -815,9 +803,6 @@ button {
 
     @media only screen and (min-width: 1024px) {
         &:hover {
-            background: linear-gradient(0deg, $secondary, $primary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             opacity: 1;
         }
     }
@@ -1112,6 +1097,10 @@ main {
     }
 }
 
+.heart-logo-box {
+    position: relative;
+}
+
 .heart-restaurant {
     padding: 4vw 0 4vw 0;
 
@@ -1129,6 +1118,47 @@ main {
 
     @media only screen and (min-width: 1024px) {
         font-size: 2em;
+    }
+}
+
+.heart-restaurant-full {
+    padding: 4vw 0 4vw 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        padding: 40px 0 75px 0;
+    }
+}
+
+#restaurant-logo-full {
+    font-size: 1.2em;
+    font-weight: 900;
+    opacity: 0;
+    background: linear-gradient(0deg, $secondary, $primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: opacity 800ms ease-in-out;
+
+    &:active {
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        font-size: 2em;
+    } 
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 2em;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 
@@ -1191,6 +1221,11 @@ main {
         transform: translate(-100%, 0);
     }
 
+    .course-card:hover .circle-check {
+        transform: rotate(360deg);
+        transition: rotate 5s;
+    }
+
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
         padding: 3.5vw 5vw 3.5vw 4vw;
         margin: 0 10vw 7vw 10vw;
@@ -1203,6 +1238,12 @@ main {
         max-width: 342px;
         animation: courses-appearance 3s 1s;
     }
+}
+
+.course-informations p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .course-price {

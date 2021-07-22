@@ -1039,32 +1039,6 @@ main {
             font-size: 1.4em;
         }
     }
-
-    h3 {
-        margin: 0;
-        font-size: 0.9em;
-
-        @media only screen and (min-width: 768px) and (max-width: 1023px) {
-            font-size: 1.3em;
-        }    
-
-        @media only screen and (min-width: 1024px) {
-            font-size: 1em;
-        }
-    }
-
-    p {
-        margin: 0;
-        font-size: 0.85em;
-
-        @media only screen and (min-width: 768px) and (max-width: 1023px) {
-            font-size: 1.5em;
-        }    
-
-        @media only screen and (min-width: 1024px) {
-            font-size: 0.95em;
-        }
-    }
 }
 
 .menu-title {
@@ -1201,15 +1175,12 @@ main {
 }
 
 .course-card {
-    position: relative;
     display: flex;
     justify-content: space-between;
     background: white;
     border-radius: 4vw;
     margin: 4vw 4vw 0 5vw;
-    padding: 3vw 4vw 3vw 3vw;
     box-shadow: 1vw 1vw 3vw darken($quaternary, 2%);
-    position: relative;
     animation: courses-appearance 3s;
 
     &:hover {
@@ -1218,40 +1189,82 @@ main {
 
     &:hover > .selection-space {
         opacity: 1;
-        transform: translate(-100%, 0);
+        width: 20%;
+        transform: translate(0, 0)
     }
 
-    .course-card:hover .circle-check {
-        transform: rotate(360deg);
-        transition: rotate 5s;
+    &:hover .circle-check {
+        transform: rotate(1turn);
     }
 
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
-        padding: 3.5vw 5vw 3.5vw 4vw;
         margin: 0 10vw 7vw 10vw;
     }
 
     @media only screen and (min-width: 1024px) {
         margin: 0 0 50px 0;
-        padding: 17px 24px 17px 24px;
         border-radius: 5vw;
         max-width: 342px;
         animation: courses-appearance 3s 1s;
     }
 }
 
-.course-informations p {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+.course-text {
+    padding: 3vw 0 3vw 3vw;
+
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        padding: 3.5vw 0 3.5vw 4vw;
+    }
+
+    @media only screen and (min-width: 1024px) {
+            padding: 15px 0 15px 24px;
+    }
+}
+
+.course-name {
+    h3 {
+        margin: 0;
+        font-size: 0.9em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            font-size: 1.3em;
+        }    
+
+        @media only screen and (min-width: 1024px) {
+            font-size: 1em;
+            padding-bottom: 4px;
+        }
+    }
+}
+
+.course-informations {
+    p {
+        margin: 0;
+        font-size: 0.85em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    
+        @media only screen and (min-width: 768px) and (max-width: 1023px) {
+            font-size: 1.5em;
+        }    
+
+        @media only screen and (min-width: 1024px) {
+            font-size: 0.95em;
+        }
+    }
 }
 
 .course-price {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    padding-bottom: 3vw;
 
     @media only screen and (min-width: 1024px) {
-        margin-left: 28px;
+        padding-bottom: 15px;
     }
 
     p {
@@ -1261,12 +1274,8 @@ main {
 
 .selection-space {
     opacity: 0;
-    position: absolute;
     background: #99E2D0;
-    left: 100%;
-    top: 0%;
-    width: 20%;
-    height: 100%;
+    width: 0;
     border-radius: 0 4vw 4vw 0;
     display: flex;
     justify-content: center;
@@ -1283,29 +1292,26 @@ main {
     justify-content: center;
     background: white;
     border-radius: 5vw;
-    padding: 0px;
-    transition: transform 500ms;
-
-        &:hover {
-            transform: rotate(1turn);
-    }
+    padding: 0;
+    transition: transform 500ms ease-in-out;
 
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
         padding: 2px 0;
     }
 }
 
-.check {
+.fa-check {
     color: $tertiary;
-    padding: 0.3vw 0.7vw;
+    padding: 1vw;
     font-size: 0.8em;
 
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
         font-size: 1em;
+        padding: 0.6vw 0.85vw;
     }
 
     @media only screen and (min-width: 1024px) {
-        padding: 0.3vw 0.5vw;
+        padding: 0.45vw 0.45vw;
         font-size: 1em;
     }
 }
@@ -1325,8 +1331,12 @@ main {
 }
 
 .order-button {
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        padding: 0 0 2vw 0;
+    }
+
     @media only screen and (min-width: 1024px) {
-        padding: 0 2vw;
+        padding: 0 2vw 2vw 2vw;
     }
 }
 
